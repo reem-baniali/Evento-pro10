@@ -40,7 +40,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="col-md-4 d-flex align-items-center py-4">
       <a class="navbar-brand" href="/" style="font-family: 'Oldenburg', cursive;"><span
-          style="font-size:38px">E</span><span>VENTO</span></a>
+          style="font-size:38px">E</span><span>vento</span></a>
     </div>
     <div class="container d-flex align-items-center">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"

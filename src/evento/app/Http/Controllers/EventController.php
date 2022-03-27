@@ -18,7 +18,7 @@ class EventController extends Controller
     {
         $events = Event::paginate(6);
         $categories = Category::all();
-        return view('publicSite.companies', compact(['events', 'categories']));
+        return view('publicSite.events', compact(['events', 'categories']));
     }
 
     /**
@@ -29,7 +29,7 @@ class EventController extends Controller
     public function create($id)
     {
         $singleEvent = Event::find($id);    
-        return view('publicSite.singleCompany', compact([ 'singleEvent']));
+        return view('publicSite.singleEvent', compact([ 'singleEvent']));
 
     
     }
@@ -67,7 +67,7 @@ class EventController extends Controller
             $singleEvent = Event::find($id);
             $categories = Category::all();
           
-            return view('publicSite.singleCompany', compact(['singleEvent','categories']));
+            return view('publicSite.singleEvent', compact(['singleEvent','categories']));
         }
     }
     /**

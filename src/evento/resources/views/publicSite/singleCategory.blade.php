@@ -42,7 +42,7 @@
           @foreach ($categories as $category)
             <li class="category-title">
                <a href="{{ route('category',$category->id )}}">
-                {{ $category->name }}</a>
+                {{ $category->name }} </a>
             </li>
             @endforeach
         </ul>
@@ -57,7 +57,7 @@
   @foreach ($singleCategories->event as $event)
   <div class="col-4" style="max-width: fit-content; overflow:hidden">
  <div class="card" style="width: 18rem; ">
-    {{-- <img height="250px" src="{{ asset($event->image) }}" class="card-img-top" alt="Company-logo"> --}}
+    <img height="250px" src="{{ asset($event->image1) }}" class="card-img-top" alt="Company-logo">
     <div class="card-body">
       <h5 class="card-title">{{ $event->name }}</h5>
       <p class="card-text text-truncate">{{ $event->description }}</p>

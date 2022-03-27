@@ -282,7 +282,7 @@
             <div class="icon mt-2 d-flex justify-content-center align-items-center"><span
                 class="flaticon-analysis"></span></div>
             <div class="text media-body">
-              <h3>Business Analysis</h3>
+              <h3>Manage your events</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
             </div>
           </div>
@@ -292,7 +292,7 @@
             <div class="icon mt-2 d-flex justify-content-center align-items-center"><span
                 class="flaticon-business"></span></div>
             <div class="text media-body">
-              <h3>Business Consulting</h3>
+              <h3>Up to date with latest events </h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
             </div>
           </div>
@@ -302,7 +302,7 @@
             <div class="icon mt-2 d-flex justify-content-center align-items-center"><span
                 class="flaticon-insurance"></span></div>
             <div class="text media-body">
-              <h3>Business Insurance</h3>
+              <h3>Manage Business Events</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
             </div>
           </div>
@@ -357,17 +357,18 @@
    @foreach ($events as $event)
         <div class="col-md-6 col-lg-4 ftco-animate">
           <div class="blog-entry">
-            {{-- <a href="blog-single.html" class="block-20 d-flex align-items-end"
-              style="background-image: url('{{asset($shop->logo)}}');">
-            </a> --}}
-            <div class="text bg-white p-4">
-              <h3 class="heading"><a href="#">{{$event->name}}</a></h3>
-              <p>{{ $event->city}}</p>
+            <a href="blog-single.html" class="block-20 d-flex align-items-end"
+              style="background-image: url('{{asset($event->image1)}}');">
+            </a>
+            <div class="text bg-white p-4 ">
+              <h3 class="heading"><strong><a href="#">{{$event->name}}</a></strong></h3>
+              <p> <strong> Speaker</strong> {{ $event->speaker}}</p>
+              <p>{{ $event->date}}</p>
+              <p>{{ $event->location}}</p>
               <div class="d-flex align-items-center mt-4">
-                <p class="mb-0"><a href="{{ route('event',$event->id) }}" class="btn btn-primary">Discover More <span
+                <p class="mb-0"><a href="{{ route('event',$event->id) }}" class="btn btn-primary mb-1">Discover More <span
                       class="ion-ios-arrow-round-forward"></span></a></p>
                 <p class="ml-auto mb-0">
-                <p class="mr-2 mt-3">{{ $event->location }}</p>
                 <p class="mr-2 mt-3"></p>
                 </p>
               </div>

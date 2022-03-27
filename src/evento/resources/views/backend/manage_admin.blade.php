@@ -119,7 +119,6 @@
                                                 <th scope="col">#</th>
                                                 <th scope="col">Event Name</th>
                                                 <th scope="col">Category</th>
-                                                <th scope="col ">Description</th>
                                                 <th scope="col ">Speaker</th>
                                                 <th scope="col ">City</th>
                                                 <th scope="col ">Location</th>
@@ -144,7 +143,6 @@
                                                 <th scope="row">{{$event->id}}</th>
                                                 <td>{{$event->name}}</td>
                                                 <td>{{$event->category->name}}</td>
-                                                <td>{{$event->description}}</td>
                                                 <td>{{$event->speaker}}</td>
                                                 <td>{{$event->city}}</td>
                                                 <td>{{$event->location}}</td>

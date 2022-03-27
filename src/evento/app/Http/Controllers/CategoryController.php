@@ -60,7 +60,7 @@ class CategoryController extends Controller
         $categories = Category::all();
         $singleCategories = Category::find($id);
         //  $categories ->owner;
-        // redirect('companies')->back();
+        // redirect('events')->back();
         return view('publicSite.singleCategory', compact('categories', 'singleCategories'));
     }
 

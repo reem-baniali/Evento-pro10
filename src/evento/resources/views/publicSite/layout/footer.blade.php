@@ -11,7 +11,7 @@
       </div>
        <div class="col-md-6 col-lg-2">
         <div class="ftco-footer-widget mb-5 ml-md-4">
-          <h2 class="ftco-heading-2">Categories</h2>
+          {{-- <h2 class="ftco-heading-2">Categories</h2> --}}
           <ul class="list-unstyled">
             {{-- @foreach ($categories as $category ) --}}
             <li class="nav-item">

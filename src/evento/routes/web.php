@@ -40,7 +40,7 @@ Route::get('/events', [EventController::class, 'index'])->name('allEvents');
 
 Route::get('/event_show/{id}', [EventController::class, 'show2'])->name('event');
 
-// Route::post('/companies/{company_id}', [ReviewController::class, 'store'])->name('companyReview');
+// Route::post('/events/{company_id}', [ReviewController::class, 'store'])->name('companyReview');
 
 Route::get('singleCategory/{id}', [CategoryController::class, 'show'])->name('category');
 
@@ -48,7 +48,7 @@ Route::get('/search', [EventController::class, 'search'])->name('search');
 
 // Route::post('/comments',[CommentController::class,'store'])->name('comment.store');
 
-// Route::get('/companies/{id}', [ServiceController::class, 'show'])->name('service');
+// Route::get('/events/{id}', [ServiceController::class, 'show'])->name('service');
 
 
 Route::get('/services', function () {
@@ -60,7 +60,7 @@ Route::get('/about', function () {
 
 
 
-// Route::get('/', [OwnerController::class, 'getcompanies'])->name('landingComp');
+// Route::get('/', [OwnerController::class, 'getevents'])->name('landingComp');
 // Route::get('/showcompany', [OwnerController::class, 'showcompany'])->name('showcompany');
 Route::resource('users', UserController::class);
 
